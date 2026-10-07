@@ -15,9 +15,9 @@ const PORT = process.env.PORT || 3000;
 const DATA_DIR = path.join(__dirname, "data");
 const DB_PATH = path.join(DATA_DIR, "db.json");
 
-const STATIC_DIR = fs.existsSync(path.join(__dirname, "public"))
+const STATIC_DIR = fs.existsSync(path.join(__dirname, "public", "index1.html"))
     ? path.join(__dirname, "public")
-    : path.join(__dirname, "..");
+    : __dirname;
 
 const DEFAULT_DB = {
     accounts: [],
