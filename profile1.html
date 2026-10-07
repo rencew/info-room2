@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - CICT Code Forum</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="forum-header">
+        <h1>User Profile</h1>
+        <nav>
+            <a href="forum1.html">Forum</a>
+            <a href="cosmetics1.html">Shop</a>
+            <a href="index1.html">Home</a>
+            <button type="button" onclick="logoutUser()">Logout</button>
+        </nav>
+    </header>
+
+    <main class="profile-page">
+        <section class="profile-hero" id="profileHero">
+            <div class="profile-avatar-wrap">
+                <div class="character-area profile-theme-area" id="profileThemeArea">
+                    <div class="character profile-character" id="profileCharacterStage">
+                        <div class="character-layer character-base"></div>
+                        <div id="profileCharacterLayers"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-info" id="profileInfo">
+                <p class="empty-state">Loading profile...</p>
+            </div>
+        </section>
+
+        <section class="profile-posts-section">
+            <h2>Posts by <span id="profilePostsTitle">User</span></h2>
+            <div id="profilePosts"></div>
+        </section>
+
+        <p class="profile-back">
+            <a href="forum1.html">← Back to Forum</a>
+        </p>
+    </main>
+
+    <footer>
+        <p>CICT Code Forum © 2026</p>
+    </footer>
+
+    <script src="script1.js"></script>
+</body>
+</html>
