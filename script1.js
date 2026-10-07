@@ -15,7 +15,7 @@ const STORAGE = {
 
 // Same-origin when site is served by the Node server.
 // Change this only if API is hosted on another URL.
-const API_BASE = "https://cict-forum-db.onrender.com";
+const API_BASE = "https://info-room2.onrender.com";
 
 const SERVER_KEY = {
     [STORAGE.accounts]: "accounts",
