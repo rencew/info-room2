@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmetics Designer - CICT Code Forum</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="admin-header">
+        <h1>Cosmetics Designer</h1>
+        <p>Add and manage cosmetics for the student shop.</p>
+        <nav>
+            <a href="forum1.html">Forum</a>
+            <a href="cosmetics1.html">Shop</a>
+            <a href="admin1.html">Admin</a>
+            <a href="index1.html">Home</a>
+            <button type="button" onclick="logoutUser()">Logout</button>
+        </nav>
+    </header>
+
+    <main class="admin-container">
+        <section class="admin-section">
+            <h2>Add a cosmetic</h2>
+            <form id="cosmeticForm">
+                <label for="cosmeticName">Cosmetic Name</label>
+                <input type="text" id="cosmeticName" placeholder="Example: Blue Cap" required>
+
+                <label for="cosmeticCategory">Category</label>
+                <select id="cosmeticCategory" required>
+                    <option value="">Select Category</option>
+                    <option value="hats">Hats</option>
+                    <option value="eyes">Eyes</option>
+                    <option value="mouth">Mouth</option>
+                    <option value="nose">Nose</option>
+                    <option value="ears">Ears</option>
+                    <option value="eyebrows">Eyebrows</option>
+                    <option value="eyelashes">Eyelashes</option>
+                    <option value="skin">Skin</option>
+                    <option value="tops">Tops</option>
+                    <option value="pants">Pants</option>
+                    <option value="shoes">Shoes</option>
+                    <option value="themes">Themes</option>
+                </select>
+
+                <label for="cosmeticPrice">Price (Points)</label>
+                <input type="number" id="cosmeticPrice" min="0" placeholder="Example: 50" required>
+
+                <label for="cosmeticSeason">Season / Availability</label>
+                <select id="cosmeticSeason">
+                    <option value="normal">Normal</option>
+                    <option value="halloween">Halloween</option>
+                    <option value="christmas">Christmas</option>
+                    <option value="limited">Limited edition</option>
+                </select>
+
+                <label for="cosmeticImage">Cosmetic Image</label>
+                <p class="form-note">
+                    Upload a PNG image with a transparent background.
+                    Recommended size: <strong>300 × 400 px</strong>. Other sizes are fitted automatically.
+                </p>
+                <input type="file" id="cosmeticImage" accept="image/png" required>
+                <div id="uploadPreview" class="upload-preview"></div>
+
+                <button type="submit" class="btn-primary">Add cosmetic</button>
+            </form>
+        </section>
+
+        <section class="admin-section">
+            <h2>Shop catalog</h2>
+            <div id="designerCosmetics"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>CICT Code Forum © 2026</p>
+    </footer>
+
+    <script src="script1.js"></script>
+</body>
+</html>

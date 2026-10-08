@@ -1,0 +1,9 @@
+{
+  "name": "cict-forum-server",
+  "version": "1.0.0",
+  "description": "Simple shared database server for CICT Code Forum (no npm deps)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
